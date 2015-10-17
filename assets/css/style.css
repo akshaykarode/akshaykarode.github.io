@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
 	font-size: 30px;
-	margin: 0 0 30px;
+	margin: 0 0 20px;
 }
 
 h3 {
@@ -259,7 +259,7 @@ textarea.form-control {
 
 .pfblock-header {
 	text-align: center;
-	margin: 0 0 60px;
+	margin: 0 0 20px;
 }
 
 .pfblock-header-left {
@@ -285,7 +285,7 @@ textarea.form-control {
 	background: rgba(135, 135, 135, 0.5);
 	width: 100px;
 	height: 1px;
-	margin: 30px auto;
+	margin: 20px auto;
 }
 
 .pfblock-icon {
@@ -404,13 +404,19 @@ textarea.form-control {
 	padding: 40px 20px;
 	margin: 0 0 20px;
 }
+.iconbox:hover i{
+	color: #4285f4;
+}
 
 .iconbox-icon {
 	margin: 0 0 15px;
 	font-size: 32px;
-	color: #222;
+	/*color: #222;*/
 }
 
+.iconbox-icon i{
+  font-size: 40pt;
+}
 .iconbox-title {
 	margin: 0 0 15px;
 	padding: 0;
@@ -530,7 +536,7 @@ textarea.form-control {
 
 .navbar-custom,
 .navbar-custom .dropdown-menu {
-	background: #fff;
+	background: #fff !important;
 	padding: 0;
 }
 
@@ -548,7 +554,7 @@ textarea.form-control {
 .navbar-custom .navbar-nav > li.active a {
 	background: none;
 	outline: 0;
-	color: #E7746F;
+	color: #2929CC;
 }
 
 .navbar-custom .navbar-brand {

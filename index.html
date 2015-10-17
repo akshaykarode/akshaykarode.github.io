@@ -13,7 +13,13 @@
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
 	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
 	<link href="assets/css/animate.css" rel="stylesheet">
-    
+	
+	<link href="assets/bootstrap-material/css/material.min.css" rel="stylesheet">
+	<link href="assets/bootstrap-material/css/ripples.min.css" rel="stylesheet">
+  <link href="assets/css/graph.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/graph-custom.css" rel="stylesheet" type="text/css" />
+
+	  
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
     
@@ -97,9 +103,7 @@
 					<div class="pfblock-header wow fadeInUp">
 						<h2 class="pfblock-title">This is what I do</h2>
 						<div class="pfblock-line"></div>
-						<div class="pfblock-subtitle">
-							Passion is a taste of life.
-						</div>
+						
 					</div>
 
 				</div>
@@ -108,23 +112,27 @@
 
 			<div class="row">
 
-				<div class="col-sm-3">
-					<div class="iconbox wow slideInLeft">
-						<div class="iconbox-icon">
-							<span class="icon-puzzle"></span>
-						</div>
-						<div class="iconbox-text">
-							<h3 class="iconbox-title">Web Programming</h3>
-							<div class="iconbox-desc">
-								Profession. I dream for innovative ideas that i always want to code.
+				<div class="col-sm-12">
+					<div class="col-sm-3"></div>
+					<div class="col-sm-6">
+						<div class="iconbox wow slideInUp">
+							<div class="iconbox-icon">
+								<i class="mdi-hardware-computer"></i>
+							</div>
+							<div class="iconbox-text">
+								<h3 class="iconbox-title">Web Programming</h3>
+								<div class="iconbox-desc">
+									Profession. I dream for innovative things that i always want to code.
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="col-sm-3"></div>
 				</div>
         <div class="col-sm-3">
           <div class="iconbox wow slideInLeft">
             <div class="iconbox-icon">
-              <span class="icon-puzzle"></span>
+							<i class="mdi-hardware-headset"></i>
             </div>
             <div class="iconbox-text">
               <h3 class="iconbox-title">Love Music</h3>
@@ -135,9 +143,9 @@
           </div>
         </div>
         <div class="col-sm-3">
-          <div class="iconbox wow slideInRight">
+          <div class="iconbox wow slideInLeft">
             <div class="iconbox-icon">
-              <span class="icon-puzzle"></span>
+							<i class="mdi-hardware-speaker"></i>
             </div>
             <div class="iconbox-text">
               <h3 class="iconbox-title">Part time DJ</h3>
@@ -150,12 +158,25 @@
         <div class="col-sm-3">
           <div class="iconbox wow slideInRight">
             <div class="iconbox-icon">
-              <span class="icon-puzzle"></span>
+            	<i class="mdi-hardware-mouse"></i>
             </div>
             <div class="iconbox-text">
               <h3 class="iconbox-title">Gamer</h3>
               <div class="iconbox-desc">
                 Cyber games always attracts me.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="iconbox wow slideInRight">
+            <div class="iconbox-icon">
+            	<i class="mdi-image-camera"></i>
+            </div>
+            <div class="iconbox-text">
+              <h3 class="iconbox-title">Photography</h3>
+              <div class="iconbox-desc">
+                Moments are ment to capture.
               </div>
             </div>
           </div>
@@ -247,7 +268,73 @@
                         </div>
 
                     </div><!-- .row -->
-					
+					<section class="main"> 
+
+				<span class="button-label">Product:</span>
+                <input type="radio" name="fill-graph" id="f-none" /><label for="f-none">None</label>
+
+                <ul class="graph-container">
+                    <li>
+                        <span>2008</span>
+                        <div class="bar-wrapper">
+                            <div class="bar-container">
+                                <div class="bar-background"></div>
+                                <div class="bar-inner">25</div>
+                                <div class="bar-foreground"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2009</span>
+                        <div class="bar-wrapper">
+                            <div class="bar-container">
+                                <div class="bar-background"></div>
+                                <div class="bar-inner">50</div>
+                                <div class="bar-foreground"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2010</span>
+                        <div class="bar-wrapper">
+                            <div class="bar-container">
+                                <div class="bar-background"></div>
+                                <div class="bar-inner">75</div>
+                                <div class="bar-foreground"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2011</span>
+                        <div class="bar-wrapper">
+                            <div class="bar-container">
+                                <div class="bar-background"></div>
+                                <div class="bar-inner">100</div>
+                                <div class="bar-foreground"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>2012</span>
+                        <div class="bar-wrapper">
+                            <div class="bar-container">
+                                <div class="bar-background"></div>
+                                <div class="bar-inner">50</div>
+                                <div class="bar-foreground"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <ul class="graph-marker-container">
+                            <li style="bottom:25%;"><span>25%</span></li>
+                            <li style="bottom:50%;"><span>50%</span></li>
+                            <li style="bottom:75%;"><span>75%</span></li>
+                            <li style="bottom:100%;"><span>100%</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
 					<div class="col-sm-6 col-md-3 text-center">
 						<span data-percent="80" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
                             <span class="percent">80</span>
@@ -449,9 +536,13 @@
 	<script src="assets/js/jquery.sticky.js"></script>
 	<script src="assets/js/smoothscroll.js"></script>
 	<script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/jquery.easypiechart.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.cbpQTRotator.js"></script>
+  <script src="assets/js/jquery.easypiechart.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.cbpQTRotator.js"></script>
+	
+  <script src="assets/bootstrap-material/js/material.min.js"></script>
+  <script src="assets/bootstrap-material/js/ripples.min.js"></script>
+
 	<script src="assets/js/custom.js"></script>
 
 </body>
