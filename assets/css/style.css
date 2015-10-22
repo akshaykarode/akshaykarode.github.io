@@ -425,7 +425,9 @@ textarea.form-control {
 /* ---------------------------------------------- /*
  * Skills
 /* ---------------------------------------------- */
-
+.progress.vertical.bottom{
+	width: 50px;
+}
 .chart {
     display: inline-block;
     height: 140px;

@@ -24,13 +24,13 @@
 			e.preventDefault();
 		});
 
-		$(window).scroll(function() {
-			if ($(this).scrollTop() > 100) {
-				$('.scroll-up').fadeIn();
-			} else {
-				$('.scroll-up').fadeOut();
-			}
-		});
+		// $(window).scroll(function() {
+		// 	if ($(this).scrollTop() > 100) {
+		// 		$('.scroll-up').fadeIn();
+		// 	} else {
+		// 		$('.scroll-up').fadeOut();
+		// 	}
+		// });
 
 		/* ---------------------------------------------- /*
 		 * Navbar
@@ -50,20 +50,41 @@
 		 * Skills
         /* ---------------------------------------------- */    
         //var color = $('#home').css('backgroundColor');
+        var $progressBar = $('.progress .progress-bar')
+        $('#skill-set').isOnScreen({
+        	visibleTrigger:20,
+					onDone: function(done,scene){
+						if(done){
+							$progressBar.progressbar({
+			        	display_text:'fill',
+			        	update: function(current_percent,$this) {
+			        		$this.html($this.data('txt'))
+			        	}
+			        })
+						}
+					},
+					onBackStage: function(done,scene){
+						$progressBar.attr('data-transitiongoal', 0).progressbar();
+						$progressBar.each(function(i,elem){
+								$(elem).attr('data-transitiongoal', $(elem).data('skillval'))
+							})
+					}
+				})
+        
 
-        $('.skills').waypoint(function(){
-            $('.chart').each(function(){
-            $(this).easyPieChart({
-                    size:140,
-                    animate: 2000,
-                    lineCap:'butt',
-                    scaleColor: false,
-                    barColor: '#FF5252',
-                    trackColor: 'transparent',
-                    lineWidth: 10
-                });
-            });
-        },{offset:'80%'});
+        // $('.skills').waypoint(function(){
+        //     $('.chart').each(function(){
+        //     $(this).easyPieChart({
+        //             size:140,
+        //             animate: 2000,
+        //             lineCap:'butt',
+        //             scaleColor: false,
+        //             barColor: '#FF5252',
+        //             trackColor: 'transparent',
+        //             lineWidth: 10
+        //         });
+        //     });
+        // },{offset:'80%'});
         
         
         /* ---------------------------------------------- /*
