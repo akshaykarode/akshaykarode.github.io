@@ -142,10 +142,11 @@ h6 {
 /* ---------------------------------------------- */
 
 .form-control {
-	background: #FFF;
+	/*background: #FFF;
 	border: 1px solid #D8E1E4;
-	font-size: 12px;
+	font-size: 12px;*/
 	padding: 0 15px;
+	font-weight: 500;
 }
 
 .form-control:focus{
@@ -546,6 +547,7 @@ textarea.form-control {
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
 	font-size: 11px;
+	font-weight: bold;
 	letter-spacing: 3px;
 	color: #222;
 }
@@ -585,6 +587,10 @@ textarea.form-control {
 	background: #222;
 }
 
+.navbar .navbar-brand:hover, 
+.navbar .navbar-brand:focus{
+	color: black;
+}
 /* ---------------------------------------------- /*
  * Scroll to top
 /* ---------------------------------------------- */
