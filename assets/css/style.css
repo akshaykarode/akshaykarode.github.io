@@ -726,6 +726,12 @@ textarea.form-control {
 		letter-spacing: 3px;
 	}
 
+	#skill-set{
+		margin-left: 30px;
+	}
+	.progress.vertical.bottom{
+		width: 40px;
+	}
 }
 
 
