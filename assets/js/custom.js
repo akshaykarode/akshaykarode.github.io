@@ -137,7 +137,7 @@
 		/* ---------------------------------------------- */
 
 		wow = new WOW({
-			mobile: false
+			mobile: true
 		});
 		wow.init();
 
