@@ -11,6 +11,8 @@
 
 	$(document).ready(function() {
 
+		$("#includeModals").load("assets/modals/modal.html");
+
 		/* ---------------------------------------------- /*
 		 * Smooth scroll / Scroll To Top
 		/* ---------------------------------------------- */
