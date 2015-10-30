@@ -11,7 +11,8 @@
 
 	$(document).ready(function() {
 
-		$("#includeModals").load("assets/modals/modal.html");
+		$("#includeModals").load("assets/templates/modal.html");
+		$("#ga-analytics").load("assets/templates/ga.html");
 
 		/* ---------------------------------------------- /*
 		 * Smooth scroll / Scroll To Top
