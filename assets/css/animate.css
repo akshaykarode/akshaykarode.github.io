@@ -3387,3 +3387,60 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
 }
+
+/* Iconbox Breath */
+
+@-webkit-keyframes icBreath {
+  0% {
+    color: rgb(102, 102, 102);
+  }
+  50% {
+    color: #4285f4;
+  }
+  100% {
+    color: rgb(102, 102, 102);
+  }
+}
+
+@keyframes icBreath {
+  0% {
+    color: rgb(102, 102, 102);
+  }
+  50% {
+    color: #4285f4;
+  }
+  100% {
+    color: rgb(102, 102, 102);
+  }
+}
+
+
+.iconboxBreath{
+  -webkit-animation-name: icBreath 2s infinite;
+  animation: icBreath 2s infinite;
+}
+/*.iconboxBreath-d1{
+  -webkit-animation-name: icBreath 3s infinite;
+  animation: icBreath 3s infinite;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.iconboxBreath-d2{
+  -webkit-animation-name: icBreath 3s infinite;
+  animation: icBreath 3s infinite;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+.iconboxBreath-d3{
+  -webkit-animation-name: icBreath 3s infinite;
+  animation: icBreath 3s infinite;
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+.iconboxBreath-d4{
+  -webkit-animation-name: icBreath 3s infinite;
+  animation: icBreath 3s infinite;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+*/
