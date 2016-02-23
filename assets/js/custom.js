@@ -19,8 +19,12 @@
 		/* ---------------------------------------------- */
 
 		$('a[href*=#]').bind("click", function(e){
-           
+			$('.nav-menu').removeClass('active')
 			var anchor = $(this);
+			if($(anchor).hasClass('no-menu')){
+				$($('.nav-menu')[1]).addClass('active')	
+			}
+			anchor.addClass('active')
 			$('html, body').stop().animate({
 				scrollTop: $(anchor.attr('href')).offset().top
 			}, 1000);
@@ -49,30 +53,30 @@
 		// })
 
         
-        /* ---------------------------------------------- /*
+    /* ---------------------------------------------- /*
 		 * Skills
-        /* ---------------------------------------------- */    
+    /* ---------------------------------------------- */    
         //var color = $('#home').css('backgroundColor');
-        var $progressBar = $('.progress .progress-bar')
-        $('#skill-set').isOnScreen({
-        	visibleTrigger:20,
-					onDone: function(done,scene){
-						if(done){
-							$progressBar.progressbar({
-			        	display_text:'fill',
-			        	update: function(current_percent,$this) {
-			        		$this.html($this.data('txt'))
-			        	}
-			        })
-						}
-					},
-					onBackStage: function(done,scene){
-						$progressBar.attr('data-transitiongoal', 0).progressbar();
-						$progressBar.each(function(i,elem){
-								$(elem).attr('data-transitiongoal', $(elem).data('skillval'))
-							})
+      var $progressBar = $('.progress .progress-bar')
+      $('#skill-set').isOnScreen({
+      	visibleTrigger:20,
+				onDone: function(done,scene){
+					if(done){
+						$progressBar.progressbar({
+		        	display_text:'fill',
+		        	update: function(current_percent,$this) {
+		        		$this.html($this.data('txt'))
+		        	}
+		        })
 					}
-				})
+				},
+				onBackStage: function(done,scene){
+					$progressBar.attr('data-transitiongoal', 0).progressbar();
+					$progressBar.each(function(i,elem){
+							$(elem).attr('data-transitiongoal', $(elem).data('skillval'))
+						})
+				}
+			})
         
 
         // $('.skills').waypoint(function(){
@@ -90,12 +94,12 @@
         // },{offset:'80%'});
         
         
-        /* ---------------------------------------------- /*
+    /* ---------------------------------------------- /*
 		 * Quote Rotator
 		/* ---------------------------------------------- */
        
-			$( function() {
 				/*
+			$( function() {
 				- how to call the plugin:
 				$( selector ).cbpQTRotator( [options] );
 				- options:
@@ -109,12 +113,12 @@
 				}
 				- destroy:
 				$( selector ).cbpQTRotator( 'destroy' );
-				*/
 
 				$( '#cbp-qtrotator' ).cbpQTRotator();
 
 			} );
 		
+				*/
         
 		/* ---------------------------------------------- /*
 		 * Home BG
@@ -190,7 +194,7 @@
 						});
 				}           
             	return false;
-			});
+		});
 
 	});
 

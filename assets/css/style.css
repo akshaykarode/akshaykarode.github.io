@@ -602,6 +602,13 @@ textarea.form-control {
 .navbar .navbar-brand:focus{
 	color: black;
 }
+
+.navbar-custom .navbar-nav > li > a.active {
+  background: none;
+  outline: 0;
+  color: #2929CC;
+}
+
 /* ---------------------------------------------- /*
  * Scroll to top
 /* ---------------------------------------------- */
