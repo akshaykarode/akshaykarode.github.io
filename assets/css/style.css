@@ -471,8 +471,8 @@ textarea.form-control {
 /* ---------------------------------------------- */
 .hire-me{
 	text-align: center;
-  padding: 40px 20px;
-  margin: 0 0 20px;
+  padding: 20px 0px;
+  /*margin: 0 0 20px;*/
 }
 .hire-me i{
 	color: #666;
@@ -480,7 +480,17 @@ textarea.form-control {
 .hire-me:hover i{
 	color: #4285f4;
 }
-
+.align-left{
+	text-align: left;
+}
+.align-right{
+	text-align: right;
+}
+.anchor-link{
+	color: #4285f4;
+	text-decoration: underline;
+	cursor: auto;
+}
 /* ---------------------------------------------- /*
  * Contact
 /* ---------------------------------------------- */
