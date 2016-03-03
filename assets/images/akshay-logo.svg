@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewPort="0 0 32 32" viewBox="0 0 200 200" xml:space="preserve">
+	  <defs>
+	    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+	      <stop stop-color="#FFF" offset="0%">
+	        <animate id="color" attributeName="stop-color" from="#fff" to="#4285f4" dur="0.8s" begin="2s;color.end+0.7" fill="freeze" />
+	      </stop>
+	    </linearGradient>
+
+	    <!-- the gradient used by the mask -->
+	    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+	      <stop stop-color="white" offset="-10%">
+	        <animate attributeName="offset" values="-.05;.95" dur="1s" begin="color.end" />
+	      </stop>
+	      <stop stop-color="black" offset="-5%">
+	        <animate attributeName="offset" values="0;1" dur="1s" begin="color.end" />
+	      </stop>
+	      <stop stop-color="white" offset="0%">
+	        <animate id="shineEnd" attributeName="offset" values=".05;1.05" dur="1s" begin="color.end" />
+	      </stop>
+	    </linearGradient>
+
+	  	<linearGradient id="resetglow" x1="0%" y1="0%" x2="100%" y2="100%">
+	      <stop stop-color="#4285f4" offset="100%">
+	        <animate attributeName="stop-color" from="#4285f4" to="#fff" dur="0.5s" begin="shineEnd.end" />
+	      </stop>
+	    </linearGradient>
+
+	    <mask id="myShiningMask">
+	      <rect x="0" y="0" width="100%" height="100%" fill="url(#shine)" />
+	    </mask>
+	  </defs>
+	  <g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)">
+	  <path id="akshay" fill="url(#glow)" class="st0 icon" d="M82 120 c-15 -27 -30 -40 -45 -41 -16 -1 -18 -2 -5 -6 15 -4 14 -8
+	-10 -28 -15 -14 -22 -25 -16 -25 6 0 21 11 34 25 21 22 25 23 49 10 14 -7 34
+	-23 44 -35 26 -31 32 -18 11 22 -9 18 -22 52 -28 75 l-11 42 -23 -39z m23 -58
+	c-1 -1 -9 0 -18 4 -14 5 -15 10 -5 27 12 22 12 22 18 -3 4 -14 6 -26 5 -28z" mask="url(#myShiningMask)" />
+		</g>
+	</svg>

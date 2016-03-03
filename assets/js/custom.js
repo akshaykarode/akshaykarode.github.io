@@ -5,27 +5,13 @@
 	/* ---------------------------------------------- */
 
 	$(window).load(function() {
-		$('#status').fadeOut();
-		$('#preloader').delay(300).fadeOut('slow');
+		// $('#status').fadeOut();
+		$('#preloader').delay(1000).fadeOut('slow');
 	});
 
 	$(document).ready(function() {
-		function initMap() {
-      var myLatLng = {lat: -25.363, lng: 131.044};
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: myLatLng
-      });
-      var marker = new google.maps.Marker({
-        position: myLatLng,
-        map: map,
-        title: 'Hello World!'
-      });
-    }
 
-		$("#includeModals").load("assets/templates/modal.html",function(){
-			initMap()
-		});
+		$("#includeModals").load("assets/templates/modal.html");
 		$("#ga-analytics").load("assets/templates/ga.html");
 
 		/* ---------------------------------------------- /*
@@ -45,14 +31,6 @@
 			e.preventDefault();
 		});
 
-		// $(window).scroll(function() {
-		// 	if ($(this).scrollTop() > 100) {
-		// 		$('.scroll-up').fadeIn();
-		// 	} else {
-		// 		$('.scroll-up').fadeOut();
-		// 	}
-		// });
-
 		/* ---------------------------------------------- /*
 		 * Navbar
 		/* ---------------------------------------------- */
@@ -61,12 +39,6 @@
 			topSpacing: 0
 		});
 
-		// $('body').scrollspy({
-		// 	target: '.navbar-custom',
-		// 	offset: 70
-		// })
-
-        
     /* ---------------------------------------------- /*
 		 * Skills
     /* ---------------------------------------------- */    
@@ -91,48 +63,6 @@
 						})
 				}
 			})
-        
-
-        // $('.skills').waypoint(function(){
-        //     $('.chart').each(function(){
-        //     $(this).easyPieChart({
-        //             size:140,
-        //             animate: 2000,
-        //             lineCap:'butt',
-        //             scaleColor: false,
-        //             barColor: '#FF5252',
-        //             trackColor: 'transparent',
-        //             lineWidth: 10
-        //         });
-        //     });
-        // },{offset:'80%'});
-        
-        
-    /* ---------------------------------------------- /*
-		 * Quote Rotator
-		/* ---------------------------------------------- */
-       
-				/*
-			$( function() {
-				- how to call the plugin:
-				$( selector ).cbpQTRotator( [options] );
-				- options:
-				{
-					// default transition speed (ms)
-					speed : 700,
-					// default transition easing
-					easing : 'ease',
-					// rotator interval (ms)
-					interval : 8000
-				}
-				- destroy:
-				$( selector ).cbpQTRotator( 'destroy' );
-
-				$( '#cbp-qtrotator' ).cbpQTRotator();
-
-			} );
-		
-				*/
         
 		/* ---------------------------------------------- /*
 		 * Home BG

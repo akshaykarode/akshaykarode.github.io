@@ -24,16 +24,15 @@
 	  
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
-
-	<!-- Google Map -->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3gyfMPNC2OSvRLML16V3LzJo8MiYwt40&signed_in=true"></script>
        
 </head>
 <body>
 
 	<!-- Preloader -->
 	<div id="preloader">
-		<div id="status"></div>
+		<!-- <div id="status"></div> -->
+		<img id="status" src="./assets/images/akshay-logo.svg">
+		<!-- <object type="image/svg+xml" data="./assets/images/akshay-logo.svg">Loading...</object> -->
 	</div>
 
 	<!-- All Modals -->
@@ -255,45 +254,6 @@
   </section>
   <!-- Skills end -->
 
-	<!-- Contact start -->
-<!-- 		<section id="contact" class="pfblock">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3">
-					<div class="pfblock-header">
-						<h2 class="pfblock-title">Drop me a line</h2>
-						<div class="pfblock-line"></div>
-						<div class="pfblock-subtitle">
-							Feel free to contact me. I would like to hear from you.
-						</div>
-					</div>
-				</div>
-			</div> 
-			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3">
-					<form id="contact-form" role="form">
-						<div class="ajax-hidden">
-							<div class="form-group wow fadeInUp">
-								<label class="sr-only" for="c_name">Name</label>
-								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
-							</div>
-							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
-								<label class="sr-only" for="c_email">Email</label>
-								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
-							</div>
-							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
-								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
-							</div>
-							<button type="submit" class="btn btn-cl btn-block btn-raised wow fadeInUp" data-wow-delay=".3s">Send Message</button>
-						</div>
-						<div class="ajax-response"></div>
-					</form>
-				</div>
-			</div>
-		</div>
-		</section> -->
-	<!-- Contact end -->
-
 	<!-- Hire Me start -->
 	<section id="hire-me" class="pfblock">
 		<div class="container">
@@ -321,10 +281,10 @@
 						    <label><i class="fa fa-skype fa-lg"></i></label>
 						    <span> akshay.karode10</span>
 						  </div>
-						  <div class="form-group">
-						    <label><i class="fa fa-map-marker fa-lg"></i></label>
+						 <!--  <div class="form-group">
 						    <a href="#" class="anchor-link" data-toggle="modal" data-target="#map-modal"> location</a>
-						  </div>
+						    <label><i class="fa fa-map-marker fa-lg"></i></label>
+						  </div> -->
 						</div>
 					</div>
 				</div>
@@ -345,7 +305,6 @@
 		</div><!-- .container -->
 	</section>
 	<!-- Hire Me end -->
-
 	<!-- Footer start -->
 	<footer id="footer">
 		<div class="container">
@@ -393,7 +352,7 @@
 	<script src="assets/js/wow.min.js"></script>
   <script src="assets/js/waypoints.min.js"></script>
   <script src="assets/js/jquery.cbpQTRotator.js"></script>
-	
+
   <script src="assets/bootstrap-material/js/material.min.js"></script>
   <script src="assets/bootstrap-material/js/ripples.min.js"></script>
   <script src="assets/js/bootstrap-progressbar.min.js"></script>

@@ -492,6 +492,44 @@ textarea.form-control {
 	cursor: auto;
 }
 /* ---------------------------------------------- /*
+ * SVG logo
+/* ---------------------------------------------- */
+svg {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.st0 {
+	stroke: #4285f4;
+  stroke-miterlimit: 20;
+  stroke-dasharray: 900;
+  stroke-dashoffset: 0;
+  fill: url(#glow);
+  animation: dash 2s linear infinite;
+  -webkit-animation: dash 2s linear infinite;
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 900;
+  }
+  85% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 900;
+  }
+  85% {
+    stroke-dashoffset: 0;
+  }
+}
+/* ---------------------------------------------- /*
  * Contact
 /* ---------------------------------------------- */
 
@@ -725,15 +763,12 @@ textarea.form-control {
 }
 
 #status {
-	background-image: url(../images/preloader.gif);
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 200px;
 	left: 50%;
-	margin: -100px 0 0 -100px;
+	margin: -100px 0 0 -50px;
 	position: absolute;
 	top: 50%;
-	width: 200px;
 }
 
 /* ---------------------------------------------- /*
