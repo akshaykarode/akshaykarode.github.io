@@ -403,7 +403,7 @@ textarea.form-control {
 }
 
 /* ---------------------------------------------- /*
- * Servise
+ * Service
 /* ---------------------------------------------- */
 
 .iconbox {
@@ -430,7 +430,10 @@ textarea.form-control {
 	margin: 0 0 15px;
 	padding: 0;
 }
-
+.org-name{
+	color: white;
+    margin-top: 20px;
+}
 /* ---------------------------------------------- /*
  * Skills
 /* ---------------------------------------------- */
@@ -465,7 +468,9 @@ textarea.form-control {
     font-size: 50%;
     margin-left: 0.1em;
 }
-
+.progress-bar.progress-bar-silver{
+	background-color: silver;
+}
 /* ---------------------------------------------- /*
  * Hire Me
 /* ---------------------------------------------- */
