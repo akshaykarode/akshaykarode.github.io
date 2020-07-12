@@ -43,7 +43,7 @@
         return s.addClass("show-video"), e.attr("src", e.attr("data-src")), !1
     });
 
-    var countDownDate = new Date("May 17, 2020 12:00:00").getTime();
+    var countDownDate = new Date("Dec 27, 2020 12:00:00").getTime();
     var x = setInterval(function() {
         // Get today's date and time
         var now = new Date().getTime();
